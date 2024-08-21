@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 
 const App = () => {
@@ -12,4 +12,10 @@ const App = () => {
   return <div id="chart" style={{ width: "100%", height: "500px" }}></div>;
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container!);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

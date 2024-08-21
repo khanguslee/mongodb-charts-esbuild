@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "build": "node build.js",
+    "serve": "esbuild src/index.tsx --outdir=www/js --bundle --servedir=www --watch --format=esm"
   },
   "keywords": [],
   "author": "",
