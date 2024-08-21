@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ChartsEmbedSDK } from "@mongodb-js/charts-embed-dom";
+import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 
 const App = () => {
   React.useEffect(() => {
